@@ -126,6 +126,7 @@ resource "aws_instance" "hashicat" {
   tags = {
     Name = "${var.prefix}-hashicat-instance"
     Department = "devops" # PolicySet wasn't applied to workspace, re-running
+    Billable = true
   }
 }
 
